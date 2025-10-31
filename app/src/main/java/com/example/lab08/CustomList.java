@@ -25,9 +25,8 @@ public class CustomList {
         if (!cities.contains(city)) {
             throw new IllegalArgumentException("City not found in list");
         }
+        cities.remove(city);
     }
 
-    public int countCities(){
-
-    }
+    public int countCities(){return cities.size();}
 }
